@@ -1,0 +1,54 @@
+/* Variables
+   ========================================================================== */
+
+:root {
+    /* PRIMARY */
+    --body-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    /* NEUTRAL */
+}
+
+img { width: 100%;} /* Setting the img width to 100% for responsiveness */
+
+
+
+
+
+/* Body
+   ========================================================================== */
+
+/**
+ * 1. Centering the main part of our page vertically & horizontally
+ */
+
+body {
+  display: flex; /* [1] */
+  justify-content: center; /* [1] */
+  align-items: center; /* [1] */
+  min-height: 100vh; /* [1] */
+  background: var(--body-background);
+}
+
+main {
+  background: var(--card-background);
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Body
+   ========================================================================== */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+  .card__heading { color: white;}
+  .card__paragraph { 
+    max-width: 20rem;
+    color: hsla(0, 0%, 100%, 0.75);
+  }

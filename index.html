@@ -2,44 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+      name="viewport" 
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <link rel="stylesheet" href="./node_modules/normalize.css/" />
+    <link 
+      rel="stylesheet" 
+      href="./node_modules/normalize.css/normalize.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <link 
+      rel="icon" 
+      type="image/png" 
+      sizes="32x32" 
+      href="./images/favicon-32x32.png" 
+    />
 
     <title>Stats Preview Card Component</title>
 </head>
 <body>
   <div class="container">
-    
-    <header>
-      <h1 class="sr-only">Stats Preview Card Component</h1>
-    </header>
 
     <main>
-    
-      <article>
+    <!-- here is our main content -->
+      <article class="card">
+      <!-- It contains an article-->
+        <figure class="card__fig">
 
-        <figure>
           <img 
-            class="article__img" 
             src="./images/image-header-mobile.jpg"
             alt="three womans sitting and doing business stuff"
           />
+
         </figure>
 
-        <header>
-          <h2 class="article__heading">
-            Get <span>insights</span> that helps your business grow.
-          </h2>
-        </header>
+        <div class="card__text">
 
-          <p class="article__paragraph">
+          <h2 class="card__heading">
+            Get 
+            <span class="article__heading--color">
+              insights
+            </span> 
+            that helps your business grow.
+          </h2>
+
+          <p class="card__paragraph">
             Discover the benefits of data
             analytics and make better decisions
             regarding revenue, customer
             experience, and overfall efficiency
           </p>
+
+        </div>
+
+        <div class="stats">
+
+          <div class="stats__companies">
+            <p><span>10k+</span>companies</p>
+          </div>
+
+          <div class="stats__templates">
+            <p><span>314</span>templates</p>
+          </div>
+
+          <div class="stats__queries">
+            <p><span>12M+</span>queries</p>
+          </div>
+
+        </div>
         
       </article>
 
