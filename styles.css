@@ -51,34 +51,44 @@ main {
 
 .card {}
 
-  .card__fig { 
+  .fig { 
     margin: 0;
   }
 
-    .card__fig__img {}
+    .fig__img {
+    }
 
-  .card__info {
+
+  .cont {
     margin: 0 auto;
     width: 80%;
     text-align: center;
   }
 
-    .card__info__heading { font-weight: 700;}
+    .cont__h { font-weight: 700;}
 
-    .card__info__paragraph { margin-bottom: 2rem;}
-
-    .stats { 
-      line-height: 1.6rem;
-      font-size: 0.8rem;
-    }
-
-.card__info--color { color: white }
+    .cont__para { margin-bottom: 2.2rem;}
 
 
-.card__info__heading--color { color: var(--accent); }
+  .stats { 
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
 
 
-.card__info__paragraph--color { color: var(--stats) }
+
+
+
+/* MODIFIERS
+   ========================================================================== */
+
+.cont__h--color-white { color: white }
+.cont__s--color-acc { color: var(--accent); }
+
+
+.cont__para--color { color: var(--stats) }
 
 /* all living inside the STATS block */
 .companies--color { color: var(--stats) }
@@ -94,5 +104,9 @@ strong {
   font-size: 1.5rem;
 }
 
-/* 
+
+
+
+
+/* MEDIAQUERIES
    ========================================================================== */
