@@ -61,11 +61,14 @@ main {
 
   .cont {
     margin: 0 auto;
-    width: 80.5%;
+    width: 17rem;
     text-align: center;
   }
 
-    .cont__h { font-weight: 700;}
+    .cont__h { 
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
 
     .cont__para { margin-bottom: 2.2rem;}
 
