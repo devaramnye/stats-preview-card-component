@@ -11,9 +11,8 @@
     --stats: hsla(0, 0%, 100%, 0.6);
 }
 
-img { 
-  width: 100%; /* Setting the img width to 100% for responsiveness */
-}
+
+
 
 
 /* BODY & MAIN
@@ -55,7 +54,22 @@ main {
     margin: 0;
   }
 
+    .overlay { position: relative; }
+
+    .overlay::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: hsla(277, 64%, 61%, 35%);
+      z-index: 999;
+    }
+
     .fig__img {
+      display: block;
+      width: 100%;
     }
 
 
@@ -113,3 +127,30 @@ strong {
 
 /* MEDIAQUERIES
    ========================================================================== */
+
+@media only screen and ( min-width: 700px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main {
+    max-width: 50rem;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .fig {
+    width: 50%;
+  }
+
+  .cont {
+    width: 50%;
+    background-color: red;
+    text-align: left;
+  }
+}
