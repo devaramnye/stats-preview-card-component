@@ -139,7 +139,7 @@ strong {
   }
 
   main {
-    max-width: 63rem;
+    max-width: 65rem;
   }
 
   .stats {
@@ -152,10 +152,6 @@ strong {
   .fig {
     width: 50%;
   }
-
-    .fig__img {
-      width: 100%;
-    }
 
   .cont {
     width: 50%;
