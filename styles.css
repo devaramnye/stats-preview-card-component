@@ -81,10 +81,14 @@ main {
 
     .cont__h { 
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 1.7rem;
+      margin-top: 2.5rem;
     }
 
-    .cont__para { margin-bottom: 2.2rem;}
+    .cont__para { 
+      margin-bottom: 2.2rem;
+      line-height: 1.5rem;
+    }
 
 
   .stats { 
@@ -128,14 +132,14 @@ strong {
 /* MEDIAQUERIES
    ========================================================================== */
 
-@media only screen and ( min-width: 64rem) {
+@media only screen and ( min-width: 66rem) {
   .card {
     display: flex;
     flex-direction: row-reverse;
   }
 
   main {
-    max-width: 61rem;
+    max-width: 63rem;
   }
 
   .stats {
