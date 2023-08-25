@@ -153,6 +153,10 @@ strong {
     width: 50%;
   }
 
+    .fig__img {
+      width: 100%;
+    }
+
   .cont {
     width: 50%;
     text-align: left;
