@@ -63,7 +63,7 @@ main {
       left: 0;
       height: 100%;
       width: 100%;
-      background: hsla(277, 59%, 38%, 0.7);
+      background: hsla(277, 59%, 30%, 0.8);
       z-index: 999;
     }
 
