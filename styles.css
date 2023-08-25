@@ -63,7 +63,7 @@ main {
       left: 0;
       height: 100%;
       width: 100%;
-      background: hsla(277, 64%, 61%, 35%);
+      background: hsla(277, 59%, 38%, 0.7);
       z-index: 999;
     }
 
@@ -128,20 +128,21 @@ strong {
 /* MEDIAQUERIES
    ========================================================================== */
 
-@media only screen and ( min-width: 700px) {
+@media only screen and ( min-width: 64rem) {
   .card {
     display: flex;
     flex-direction: row-reverse;
   }
 
   main {
-    max-width: 50rem;
+    max-width: 61rem;
   }
 
   .stats {
     display: flex;
-    justify-content: center;
     gap: 3rem;
+    margin-bottom: 0;
+    font-size: 0.6rem;
   }
 
   .fig {
@@ -150,7 +151,18 @@ strong {
 
   .cont {
     width: 50%;
-    background-color: red;
     text-align: left;
+    padding: 1.2rem 0.5rem 1.5rem 3rem;
   }
+
+    .cont__h {
+      width: 90%;
+      font-size: 2rem;
+    }
+
+    .cont__para {
+      width: 70%;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+    }
 }
