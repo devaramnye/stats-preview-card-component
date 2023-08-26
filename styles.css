@@ -52,24 +52,13 @@ main {
 
   .fig { 
     margin: 0;
+    background-color: hsl(277, 64%, 61%);
   }
 
-    .overlay { position: relative; }
-
-    .overlay::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: hsla(277, 59%, 30%, 0.8);
-      z-index: 999;
-    }
-
     .fig__img {
-      display: block;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
 
@@ -95,7 +84,6 @@ main {
     line-height: 1.6rem;
     font-size: 0.8rem;
     color: white;
-    margin-bottom: 2rem;
   }
 
 
@@ -139,24 +127,26 @@ strong {
   }
 
   main {
-    max-width: 63rem;
+    max-width: 55rem;
   }
 
   .stats {
     display: flex;
     gap: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
     font-size: 0.6rem;
   }
 
   .fig {
     width: 50%;
+    background-color: red;
   }
 
   .cont {
     width: 50%;
     text-align: left;
-    padding: 1.2rem 0.5rem 1.5rem 3rem;
+    margin-left: 2rem;
   }
 
     .cont__h {
@@ -165,7 +155,7 @@ strong {
     }
 
     .cont__para {
-      width: 70%;
+      width: 80%;
       font-size: 0.8rem;
       line-height: 1.3rem;
     }
